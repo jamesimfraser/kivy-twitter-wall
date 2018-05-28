@@ -1,0 +1,26 @@
+<RootWidget>:
+    canvas.before:
+        Color:
+            rgba: 1, 0.75, 0.25, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<BoxWidget>:
+    orientation: "vertical"
+    padding: [10, 10]
+
+<LabelWidget>:
+    color: (0, 0, 0, 1)
+    font_size: 32
+    font_name: "fonts/Lato-Regular.ttf"
+    halign: "center"
+    text_size: root.width, None
+
+<VideoWidget>:
+    state: "pause"
+    options: {"eos": "loop"}
+
+<ImageWidget>:
+    source: ""
+    
